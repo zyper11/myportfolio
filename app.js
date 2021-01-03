@@ -2,7 +2,7 @@ function smoothScroll(target, duration) {
     var target = document.querySelector(target);
     var targetPosition = target.getBoundingClientRect().top;
     var startPosition = window.pageYOffset;
-    var distance = targetPosition - startPosition;
+    var distance = targetPosition;
     var startTime = null;
 
     function animation(currentTime) {
@@ -42,3 +42,4 @@ var btnContact = document.querySelector('.btn-contact');
 btnContact.addEventListener('click', function() {
     smoothScroll('.contact-section', 500);
 });
+
