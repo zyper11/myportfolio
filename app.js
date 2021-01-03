@@ -37,9 +37,27 @@ btnskills.addEventListener('click', function() {
     smoothScroll('.skills-section', 500);
 });
 
-var btnContact = document.querySelector('.btn-contact');
+// var btnContact = document.querySelector('.btn-contact');
 
-btnContact.addEventListener('click', function() {
-    smoothScroll('.contact-section', 500);
-});
+// btnContact.addEventListener('click', function() {
+//     smoothScroll('.contact-section', 500);
+// });
+
+function setProgress(target) {
+    const progress = document.querySelector(target);
+
+    progress.style.width = progress.getAttribute('data-done') + '%';
+    progress.style.opacity = 1;
+}
+
+setProgress('.angular');
+setProgress('.express');
+setProgress('.firebase');
+setProgress('.flutter');
+setProgress('.java');
+setProgress('.javascript');
+setProgress('.laravel');
+setProgress('.mysql');
+setProgress('.spring');
+setProgress('.vue');
 

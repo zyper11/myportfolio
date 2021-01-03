@@ -31167,6 +31167,39 @@ video {
           animation: bounce 1s infinite;
 }
 
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 25px;
+  /* width: auto; */
+}
+
+.angular, 
+.express,
+.firebase,
+.flutter,  
+.java,
+.javascript,
+.laravel,
+.mysql,
+.spring,
+.vue
+{
+  background: linear-gradient(to left, #4338CA, #34D399);
+  box-shadow: 0 3px 3px -5px #4338CA, 0 2px 5px #ECFDF5;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
